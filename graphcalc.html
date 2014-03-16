@@ -1,0 +1,13 @@
+ <html>
+    <head>
+        <title>Graphing Calculator</title>
+        <script src="graphcalc.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body onload="draw();">
+        <canvas id="graphPanel" width="1000" height="1000" style="border:1px solid #000000;"></canvas>
+        <br />
+        Y=<input type="text" id="equation" value="" onchange="clearGraph(); draw();"><br />
+        <button onclick="clearGraph();">Clear Graph</button> <br />
+    </body>
+</html>
